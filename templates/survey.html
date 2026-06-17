@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <link rel='stylesheet' href="/static/Style.css" >
+</head>
+<div class="container">
+
+<body>
+    <h2></h2>
+    <p></p>
+    <form method="POST"></form>
+        <div class = "page-text">
+    <h1>its your number: {{number}}</h1>
+    <h2>answer these questions</h2>
+    <form method="post">
+        <label>What is your favorite animal?</label><br />
+        <label><input type=radio name="favorite_animal" value="cat" required /> cat </label><br />
+        <label><input type=radio name="favorite_animal" value="dog" /> dog </label><br />
+        <label><input type=radio name="favorite_animal" value="mouse" /> mouse </label><br />
+        <label><input type=radio name="favorite_animal" value="rabbit" /> rabbit </label><br />
+        {#questian 2#}
+        <label>What is your favorite game?</label><br />
+        <label><input type=checkbox name="favorite games" value="roblox" /> roblox </label><br />
+        <label><input type=checkbox name="favorite games" value="fortnite" /> fortnite </label><br />
+        <label><input type=checkbox name="favorite games" value="among us" /> among us </label><br />
+        <label><input type=checkbox name="favorite games" value="minecraft" /> minecraft </label><br />
+        <label><input type=checkbox name="favorite games" value="other" /> other </label><br />
+        {#questian 3#}
+        <label>What is your favorite food?</label><br />
+        </div>
+        <label><input type=text name="favorite food" placeholder="food" required />  </label><br />
+        {#questian 4#}
+        <div class = "page-text">
+
+        <label>WWhat is your favorite gadget?</label><br />
+        <label><input type=radio name="favorite gadget" value="phone" required /> phone </label><br />
+        <label><input type=radio name="favorite gadget" value="computer" /> computer </label><br />
+        <label><input type=radio name="favorite gadget" value="playstation" /> playstation </label><br />
+        <label><input type=radio name="favorite gadget" value="Smart watch" /> Smart watch </label><br />
+        {#questian 5#}
+        <label>What is your favorite game in roblox?</label><br />
+        <label><input type=checkbox name="favorite roblox game" value="grow a garden" /> grow a garden </label><br />
+        <label><input type=checkbox name="favorite roblox game" value="rivels" /> rivels </label><br />
+        <label><input type=checkbox name="favorite roblox game" value="escape tsunami for brainrots" /> escape tsunami for brainrots </label><br />
+        <label><input type=checkbox name="favorite roblox game" value="slime rng" /> slime rng </label><br />
+        <label><input type=checkbox name="favorite roblox game" value="other" /> other </label><br />
+        {#questian 6#}
+        <label>Where did you find us?</label><br />
+            </div>
+        <label><input type=text name="source" placeholder="(:" required />  </label><br />
+        {#button#}
+        <button type="submit" > Send </button>
+    </form>
+</body>
+    </div>
+
+</html>

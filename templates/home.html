@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel='stylesheet' href="/static/Style.css">
+</head>
+<body>
+    <h1>Hello</h1>
+    <form action = "/submit" method="post">
+        <label>your phone number:</label>
+        <input type="text" name="number">
+        <button type="submit" > Send </button>
+    </form>
+    {%if error%}
+        <p>{{error}}</p>
+    {%endif%}
+</body>
+</html>
